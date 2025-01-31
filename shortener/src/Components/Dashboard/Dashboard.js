@@ -174,7 +174,7 @@ const Dashboard = () => {
               onClick={handleAnalyticsClick}
             >
               <span className="phone-menu-icon">
-             <img src="link-icon.png" alt="Links Icon" />
+            <img src="link-icon.png" alt="Links Icon" className="aa"/>
               </span>
               <span className="phone-menu-text">Analytics</span>
             </li>
@@ -222,7 +222,7 @@ const Dashboard = () => {
                 onClick={handleAnalyticsClick}
               >
                 <span className="menu-icon">
-              <img src="link-icon.png" alt="Links Icon" />
+              <img src="link-icon.png" alt="Links Icon" className="aa"  />
                 </span>
                 <span className="menu-text">Analytics</span>
               </li>
