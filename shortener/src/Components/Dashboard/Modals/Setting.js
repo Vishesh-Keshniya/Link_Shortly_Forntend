@@ -126,7 +126,7 @@ const Setting = () => {
           <input
             className="setting-input"
             type="text"
-            placeholder="Rahul Singh"
+            placeholder="Loading Name...."
             value={userData.name}
             onChange={(e) => setUserData({ ...userData, name: e.target.value })}
           />
@@ -136,7 +136,7 @@ const Setting = () => {
           <input
             className="setting-input"
             type="email"
-            placeholder="rahulsingh@gmail.com"
+            placeholder="Loading email...."
             value={userData.email}
             onChange={(e) => setUserData({ ...userData, email: e.target.value })}
           />
@@ -146,7 +146,7 @@ const Setting = () => {
           <input
             className="setting-input"
             type="text"
-            placeholder="1234567890"
+            placeholder="Loading Mobile no..."
             value={userData.phone}
             onChange={(e) => setUserData({ ...userData, phone: e.target.value })}
           />
