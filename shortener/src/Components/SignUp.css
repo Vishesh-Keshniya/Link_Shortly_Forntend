@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sign-login-container {
+  display: flex;
+  height: 100vh;
+  text-shadow:  0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.sign-login-left {
+  flex: 1;
+  background-color: #ffffff;
+  width: 100%;
+  
+ 
+
+}
+.sign-login-image {
+  width: 70%;
+    height: 99.4%;
+   
+    
+}
+
+
+.sign-login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  
+}
+
+.sign-login-form {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.sign-login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sign-form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+.sign-form-group input {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sign-login-btn {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sign-login-btn:hover {
+  background-color: #004dcc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sign-login-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sign-top-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -200px;
+  
+}
+
+.sign-register-button {
+  margin-left: 20px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1b48da;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sign-register-button:hover {
+  background: #19338D;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.sign-login-button {
+  margin-left: 20px;
+  border: none;
+  background: none;
+  font-size: large;
+  color: #000000;
+  cursor: pointer;
+  
+}
+
+.sign-login-button:hover {
+  text-decoration: underline;
+}
+
+.log {
+  background: none;
+  color: #0066ff;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 1080px) {
+  .sign-login-left {
+      display: none;
+  }
+
+  .sign-login-right {
+      margin: 0 auto;
+      width: 120%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .sign-login-form {
+      margin: 0;
+  }
+
+  .sign-top-button {
+      justify-content: flex-end;
+      margin: 20px;
+      margin-right: -10vh;
+  }
+
+  .sign-login-text {
+      text-align: left;
+      margin-bottom: 10px;
+  }
+}

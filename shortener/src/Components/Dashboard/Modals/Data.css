@@ -1,0 +1,252 @@
+.data-container {
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    color: #374151;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .table-header {
+    background-color: #f3f7fd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .data-table {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .data-table li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .table-body {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .data-row {
+    display: flex;
+    list-style-type: none;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .data-row:last-child {
+    border-bottom: none;
+  }
+  
+  .data-row li {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .data-row li a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .data-row li a:hover {
+    text-decoration: underline;
+  }
+  
+  .status-active {
+    color: #10b981; 
+    font-weight: bold;
+  }
+  
+  .status-inactive {
+    color: #B0901E;
+    font-weight: bold;
+  }
+  
+  .action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .action-icons button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .action-icons button img {
+    width: 16px;
+    height: 16px;
+  }
+  .copy
+  {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.Active {
+    color: #1EB036;
+  }
+  
+  .status.Inactive {
+    color: #B0901E;
+  }
+  
+  .status.ExpiringSoon {
+    color: orange;
+  }
+  .date-sort
+  {
+    background: none;
+    border: none;
+    padding-left: 40px;
+    cursor: pointer;
+  }
+
+  .status-sort
+  {
+    background: none;
+    border: none;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  
+.linky
+{color: black;
+
+
+}
+
+.pagination button {
+  padding: 5px 10px;
+  
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(75, 14, 14, 0.2);
+border-radius: 10px;
+}
+.pagination button.active {
+  background-color: #0000f5;
+  color: #fff;
+}
+.pages
+{
+  display: flex;
+  justify-content: center;
+}
+
+  @media (max-width: 768px) {
+    .data-table {
+      font-size: 10px;
+      background-color: #f3f7fd;
+    }
+    
+    .data-row li {
+      font-size: 10px;
+      gap: 10px;
+    }
+  
+    .data-container {
+     
+      overflow-x: auto; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 90%;
+    }
+  
+    .table-wrapper {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      position: relative; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+  
+    .table-header,
+    .table-body {
+      display: block;
+      min-width: 800px; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    }
+  
+    .data-table {
+      display: flex;
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    .data-table li,
+    .data-row li {
+      list-style: none;
+      padding: 8px 10px;
+      flex: 1;
+      white-space: nowrap;
+    }
+  
+    .table-header {
+      background-color:  #f3f7fd;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      display: flex;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      
+
+    }
+  
+    .table-body {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .data-row {
+      display: flex;
+      width: 100%;
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .pagination button {
+      padding: 5px 10px;
+      
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    }
+    .pagination button.active {
+      background-color: #0314ff;
+      color: #fff;
+    }
+    .pages
+    {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "jwt-decode": "^4.0.0"
+  },
+  "scripts": {
+  "start": "react-scripts start --host 0.0.0.0"
+}
+
+}

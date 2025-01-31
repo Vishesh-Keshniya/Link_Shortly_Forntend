@@ -1,0 +1,142 @@
+.analysis-container {
+  width: 90%;
+  margin-top: 2%;
+  margin-left: 5%;
+  background: #f8f9fc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.analysis-table-header {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  background: #F3F7FD;
+}
+
+.analysis-table {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  background: #F3F7FD;
+}
+
+.analysis-table li {
+  flex: 1;
+  text-align: left;
+}
+
+.analysis-date-sort {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.analysis-table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.analysis-row {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.analysis-row li {
+  flex: 1;
+  text-align: left;
+  list-style: none;
+}
+
+.analysis-row:nth-child(even) {
+  background: #f1f3f6;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.analysis-device {
+  text-transform: capitalize;
+}
+
+.linky {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .analysis-table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+  }
+
+  .analysis-table,
+  .analysis-row {
+      display: flex;
+      width: 100%;
+      min-width: 600px;
+  }
+
+  .analysis-table li,
+  .analysis-row li {
+      flex: 1;
+      text-align: left;
+      white-space: nowrap;
+  }
+
+  .analysis-container {
+      width: 90%;
+      margin: auto;
+      background: #f8f9fc;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+  }
+
+  .analysis-table-header {
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-weight: bold;
+      font-size: 10px;
+      background: #F3F7FD;
+      gap: 10px;
+  }
+
+  .analysis-row {
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 10px;
+      margin-top: 5px;
+      gap: 10px;
+  }
+}

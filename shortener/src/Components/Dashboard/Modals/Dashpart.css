@@ -1,0 +1,167 @@
+.dashpart-container {
+  padding: 20px;
+  
+}
+
+.total-clicks {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.total
+{
+  color:  #1B48DA;
+  padding-left: 40px;
+}
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.dashpart-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-card {
+  width: 43%;
+  background: #f9f9f9;
+  padding: 40px;
+  border: 2px #1018280D solid;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  
+
+ 
+}
+
+.stats-card h3{
+  color: #1B48DA;
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.date-clicks-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.date-clicks-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date-clicks-item span {
+  margin-right: 10px;
+}
+
+.click-bar {
+  background-color:#1B48DA;
+  height: 20px;
+  transition: width 0.3s ease; 
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.bar-label {
+
+  min-width: 80%; 
+  text-align: right; 
+  font-weight: bold;
+ 
+
+ 
+}
+
+.device-clicks-list {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.device-clicks-list li {
+  margin-bottom: 10px;
+}
+
+.device-clicks-item
+{
+  display: flex;
+}
+
+.click-bar-device {
+  background-color:#1B48DA;
+  height: 20px;
+  margin-left: 10px;
+   transition: width 0.3s ease; 
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+
+@media (max-width: 768px) 
+{
+  .dashpart-stats {
+    display: block;
+    justify-content: space-between;   
+    padding-bottom: 20px;
+  }
+
+  .stats-card {
+    width: 75%;
+    background: #f9f9f9;
+   gap: 20px;
+    border: 2px #1018280D solid;
+    
+  
+   
+  }
+  .click-bar {
+    background-color:#1B48DA;
+    height: 14px;
+    transition: width 0.3s ease; /* Smooth transition for bar resizing */
+    position: relative;
+    min-width: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+   
+  }
+  .click-bar-device {
+    background-color:#1B48DA;
+    height: 14px;
+    margin-left: 10px;
+     transition: width 0.3s ease; /* Smooth transition for bar resizing */
+    position: relative;
+    min-width: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   
+  }
+  
+ 
+  .stats-card h3{
+    color: #1B48DA;
+    font-size: 13px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+    position: relative;
+  }
+
+  .date-clicks-list
+  {
+    font-size: 14px;
+  }
+  .device-clicks-list
+  {
+    font-size: 14px;
+  }
+  .stats-card h3{
+    color: #1B48DA;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-top: -20px;
+  }
+
+
+}

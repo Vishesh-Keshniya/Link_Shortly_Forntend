@@ -1,0 +1,119 @@
+.setting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background : none;
+
+  }
+  
+  .setting-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    
+  }
+  
+  .setting-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  .setting-label {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-shadow:  0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .setting-input {
+    flex: 2;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .save-button {
+    background-color: #1B48DA;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #EB0D0D;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 20px;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+   
+  }
+  
+
+  .delete-button-part
+  {
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+@media (max-width: 600px) {
+  .setting-form {
+    width: 100%; 
+    padding: 0 10px; 
+  }
+
+  .setting-input,
+  .save-button,
+  .delete-button {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .setting-label {
+    font-size: 12px; 
+  }
+
+  .delete-button {
+    margin-top: 15px;
+   width: 100%;
+   padding-left: 100px;
+   padding-right: 100px;
+   margin-top: 10px;
+  }
+  .setting-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    
+  }
+}

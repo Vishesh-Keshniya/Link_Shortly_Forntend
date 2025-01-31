@@ -1,0 +1,202 @@
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-modal-container {
+    background: #fff;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-shadow:0 4px 10px rgba(0, 0, 0, 0.2);
+   
+  }
+  
+  .edit-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #3B3C51;
+    color: #f5f5f5;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .edit-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .edit-close-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .edit-modal-body {
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  
+  .edit-modal-body label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .edit-modal-body .edit-required {
+    color: red;
+  }
+  
+  .edit-modal-body input,
+  .edit-modal-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .edit-modal-body textarea {
+    resize: none;
+    height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .edit-expiration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-expiration-container label {
+    margin-right: 10px;
+  }
+  
+  .edit-expiration-toggle {
+    margin-right: -30px;
+  }
+  
+  .edit-expiration-toggle input {
+    transform: scale(1.2);
+  }
+  
+  .edit-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    background: #3B3C511A;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .edit-clear-button,
+  .edit-create-button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .edit-clear-button {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  
+  .edit-create-button {
+    background: #1b48da;
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .edit-create-button:hover {
+    background: #163bbd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .edit-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 18px;
+  }
+  
+  .edit-toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .edit-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-slider::before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-toggle-switch input:checked + .edit-slider {
+    background-color: #1b48da;
+  }
+  
+  .edit-toggle-switch input:checked + .edit-slider::before {
+    transform: translateX(17px);
+    background-color: #ffffff;
+  }
+  
+  .edit-toggle-switch:hover .edit-slider {
+    background-color: #1b48da;
+  }
+  
+  .edit-toggle-switch input:checked:hover + .edit-slider {
+    background-color: #a7a7aa;
+  }
+  
