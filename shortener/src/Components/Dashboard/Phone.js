@@ -40,7 +40,7 @@ const Phone = () => {
               onClick={handleAnalyticsClick}
             >
               <span className="phone-menu-icon">
-                <img src="Anal-icon.png" alt="Analytics Icon" />
+                <img src="link-icon.png" alt="Analytics Icon" />
               </span>
               <span className="phone-menu-text">Analytics</span>
             </li>
